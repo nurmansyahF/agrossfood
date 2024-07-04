@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link href="src/output.css" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
   <title>AGROSS FOOD</title>
 </head>
 <body class="bg-bgrey dark:bg-black">
@@ -14,8 +16,8 @@
             <div class="header-content flex w-full justify-between item-center xl:px-0 px-4">
                 <div class="header-left flex gap-8 items-center">
                     <a href="/" class="header-logo">
-                        <img src="src/images/new-logo-agros-food.svg" alt="logo-agroosfood" class="md:w-[208px] md:h-[31px] h-[18px] dark:hidden">
-                        <img src="src/images/agros-food-white.svg" alt="logo-agroosfood" class="md:w-[208px] md:h-[31px] h-[18px] hidden dark:block">
+                        <img src="images/new-logo-agros-food.svg" alt="logo-agroosfood" class="md:w-[208px] md:h-[31px] h-[18px] dark:hidden">
+                        <img src="images/agros-food-white.svg" alt="logo-agroosfood" class="md:w-[208px] md:h-[31px] h-[18px] hidden dark:block">
                     </a>
                     <nav class="nav-main gap-8 uppercase lg:flex hidden">
                         <a href="#about" class="inline-block hover:text-primary ease-in-out dark:text-white">Tentang</a>
@@ -33,26 +35,26 @@
     <div class="landingpage pt-[7.813rem] px-4">    
         <div class="container mx-auto">
             <section class="masthead relative md:pt-[75vh] pt-[500px] mb-[3.125rem ] px-16">
-                <img class="masthead-img absolute top-0 left-0 w-full md:h-full h-full max-h-[500px] md:max-h-full object-cover md:object-center object-[70%] rounded-[10px]" src="src/images/masthead-img.jpg" alt="agroosfood-masthead">
+                <img class="masthead-img absolute top-0 left-0 w-full md:h-full h-full max-h-[500px] md:max-h-full object-cover md:object-center object-[70%] rounded-[10px]" src="images/masthead-img.jpg" alt="agroosfood-masthead">
                 <div class="excellence bg-white dark:bg-hdark rounded-[10px] lg:w-10/12 md:w-full mx-auto md:p-8 p-[18px] py-6 absolute left-0 right-0 md:bottom-[-3.125rem] bottom-9 overflow-hidden">
                     <div class="swiper swiper-ex">
                         <div class="swiper-wrapper swiper-initialized lg:flex  gap-3">
                             <div class="excellence-item swiper-slide lg:w-4/12 w-full flex align-middle gap-2">
-                                <img src="src/images/ic-excellence-3.svg" alt="excellence-icon" class="icon">
+                                <img src="images/ic-excellence-3.svg" alt="excellence-icon" class="icon">
                                 <div class="text">
                                     <h4 class="text-primary font-bold">Harga Kompetitif</h4>
                                     <span class="text-[#777777] text-xs">Harga kompetitif dengan kualitas terbaik</span>
                                 </div>
                             </div>
                             <div class="excellence-item swiper-slide lg:w-4/12 w-full flex align-middle gap-2">
-                                <img src="src/images/ic-excellence-1.svg" alt="excellence-icon" class="icon">
+                                <img src="images/ic-excellence-1.svg" alt="excellence-icon" class="icon">
                                 <div class="text">
                                     <h4 class="text-primary font-bold">Berstandar Unggul</h4>
                                     <span class="text-[#777777] text-xs">Proses pengolahan modern</span>
                                 </div>
                             </div>
                             <div class="excellence-item swiper-slide lg:w-4/12 w-full flex items-center gap-2 ">
-                                <img src="src/images/ic-excellence-2.svg" alt="excellence-icon" class="icon">
+                                <img src="images/ic-excellence-2.svg" alt="excellence-icon" class="icon">
                                 <div class="text">
                                     <h4 class="text-primary font-bold">Pelayanan Utama</h4>
                                     <span class="text-[#777777] text-xs">Terdepan dalam pelayanan</span>
@@ -66,13 +68,24 @@
             <section id="about" class="about xl:pt-[12.5rem] xl:pb-[9.375rem] py-16">
                 <div class="md:flex items-center gap-6">
                     <div class="about-left w-full lg:w-5/12 md:w-6/12 sm:w-full lg:mb-0 mb-8 ">
-                        <img class="w-full object-contain dark:hidden" src="src/images/about-img.png" alt="about-img">
-                        <img class="w-full object-contain hidden dark:block" src="src/images/about-img-dark.png" alt="about-img">
+                        <img class="w-full object-contain dark:hidden" src="images/about-img.png" alt="about-img">
+                        <img class="w-full object-contain hidden dark:block" src="images/about-img-dark.png" alt="about-img">
                     </div>
                     <div class="about-right w-full lg:7/12 md:w-6/12">
                         <span class="smalltitle text-primary block md:mb-6 mb-3 sm:w-full tracking-widest">TENTANG AGROS FOOD</span>
                         <h1 class="md:text-[32px] text-2xl font-bold md:mb-6 mb-3 dark:text-white">Solusi Penyedia Bahan Makanan dengan Kualitas Terbaik</h1>
                         <p class="text-slate">Kami hadir sebagai penyedia bahan makanan melalui budidaya organik dan pengolahan modern guna menjaga kelestarian lingkungan dan tercapai produk berkualitas serta berdaya saing.</p>
+                        <div class="findus mt-[1.875rem]">
+                            <h4 class="font-medium mb-4 dark:text-white">Temukan kami di:</h4>
+                            <div class="btns flex gap-2">
+                                <a class="inline-flex ease-in-out hover:-translate-y-1 md:w-auto w-6/12" href="http://shopee.co.id/agrosfood" target="_blank">
+                                    <img class="w-full block svg object-cover bg-white dark:bg-[#171717] rounded-lg" src="images/btn-shopee.svg" alt="btn-shopee">
+                                </a>
+                                <a class="inline-flex ease-in-out hover:-translate-y-1 md:w-auto  w-6/12" href="https://tokopedia.link/agrosfood" target="_blank">
+                                    <img class="w-full block svg object-cover bg-white dark:bg-[#171717] rounded-lg" src="images/btn-tokped.svg" alt="btn-shopee">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -83,22 +96,22 @@
                     <div class="swiper swiper-partner">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide partner-logo lg:w-6/12 md:w-4/12">
-                                <img src="src/images/logo-partner-6.svg" alt="logo-partner">
+                                <img src="images/logo-partner-6.svg" alt="logo-partner">
                             </div>
                             <div class="swiper-slide partner-logo lg:w-6/12 md:w-4/12">
-                                <img src="src/images/logo-partner-5.svg" alt="logo-partner">
+                                <img src="images/logo-partner-5.svg" alt="logo-partner">
                             </div>
                             <div class="swiper-slide partner-logo lg:w-6/12 md:w-4/12">
-                                <img src="src/images/logo-partner-4.svg" alt="logo-partner">
+                                <img src="images/logo-partner-4.svg" alt="logo-partner">
                             </div>
                             <div class="swiper-slide partner-logo lg:w-6/12 md:w-4/12">
-                                <img src="src/images/logo-partner-3.svg" alt="logo-partner">
+                                <img src="images/logo-partner-3.svg" alt="logo-partner">
                             </div>
                             <div class="swiper-slide partner-logo lg:w-6/12 md:w-4/12">
-                                <img src="src/images/logo-partner-2.svg" alt="logo-partner">
+                                <img src="images/logo-partner-2.svg" alt="logo-partner">
                             </div>
                             <div class="swiper-slide partner-logo lg:w-6/12 md:w-4/12">
-                                <img src="src/images/logo-partner-1.svg" alt="logo-partner">
+                                <img src="images/logo-partner-1.svg" alt="logo-partner">
                             </div>
                         </div>
                     </div>
@@ -113,7 +126,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
                    <div class="box-white dark:bg-hdark flex gap-3">
                         <div class="w-4/12">
-                            <img class="w-full object-cover rounded-[7px]" src="src/images/product-img-1.jpg" alt="product-img">
+                            <img class="w-full object-cover rounded-[7px]" src="images/product-img-1.png" alt="product-img">
                         </div>
                         <div class="w-8/12 flex flex-col gap-3 justify-between">
                             <div class="text">
@@ -121,13 +134,13 @@
                                 <p class="text-slate">Sapi organik dengan proses pemotongan secara halal dan pengolahan modern.</p>
                             </div>
                             <a data-modal-target="#modal1" class="open-modal btn-border btn-arrow block capitalize text-primary border py-[7px] px-[6px] rounded-[5px] border-primary bg-transparent hover:bg-primary hover:text-white text-sm font-medium rounded-4 transition duration-300 ease-in-out relative hover:cursor-pointer">Selengkapnya
-                                <img src="src/images/ic-arrow-right.svg" alt="icon" class="svg absolute">
+                                <img src="images/ic-arrow-right.svg" alt="icon" class="svg absolute">
                             </a>
                         </div>
                    </div>
                    <div class="box-white dark:bg-hdark flex gap-3">
                         <div class="w-4/12">
-                            <img class="w-full object-cover rounded-[7px]" src="src/images/product-img-2.jpg" alt="product-img">
+                            <img class="w-full object-cover rounded-[7px]" src="images/product-img-2.png" alt="product-img">
                         </div>
                         <div class="w-8/12 flex flex-col gap-3 justify-between">
                             <div class="text">
@@ -135,13 +148,13 @@
                                 <p class="text-slate">Proses pengolahan modern tanpa bahan pengawet serta melalui pengujian yang ketat.</p>
                             </div>
                             <a data-modal-target="#modal2" class="open-modal btn-border btn-arrow block capitalize text-primary border py-[7px] px-[6px] rounded-[5px] border-primary bg-transparent hover:bg-primary hover:text-white text-sm font-medium rounded-4 transition duration-300 ease-in-out relative hover:cursor-pointer">Selengkapnya
-                                <img src="src/images/ic-arrow-right.svg" alt="icon" class="svg absolute">
+                                <img src="images/ic-arrow-right.svg" alt="icon" class="svg absolute">
                             </a>
                         </div>
                    </div>
                    <div class="box-white dark:bg-hdark flex gap-3">
                         <div class="w-4/12">
-                            <img class="w-full object-cover rounded-[7px]" src="src/images/product-img-3.jpg" alt="product-img">
+                            <img class="w-full object-cover rounded-[7px]" src="images/product-img-3.png" alt="product-img">
                         </div>
                         <div class="w-8/12 flex flex-col gap-3 justify-between">
                             <div class="text">
@@ -149,13 +162,13 @@
                                 <p class="text-slate">Proses pengolahan modern tanpa bahan pengawet dan menggunakan bumbu rempah asli Nusantara.</p>
                             </div>
                             <a data-modal-target="#modal3" class="open-modal btn-border btn-arrow block capitalize text-primary border py-[7px] px-[6px] rounded-[5px] border-primary bg-transparent hover:bg-primary hover:text-white text-sm font-medium rounded-4 transition duration-300 ease-in-out relative hover:cursor-pointer">Selengkapnya
-                                <img src="src/images/ic-arrow-right.svg" alt="icon" class="svg absolute">
+                                <img src="images/ic-arrow-right.svg" alt="icon" class="svg absolute">
                             </a>
                         </div>
                    </div>
                    <div class="box-white dark:bg-hdark flex gap-3">
                         <div class="w-4/12">
-                            <img class="w-full object-cover rounded-[7px]" src="src/images/product-img-4.jpg" alt="product-img">
+                            <img class="w-full object-cover rounded-[7px]" src="images/product-img-4.png" alt="product-img">
                         </div>
                         <div class="w-8/12 flex flex-col gap-3 justify-between">
                             <div class="text">
@@ -163,13 +176,13 @@
                                 <p class="text-slate">Di budidaya dengan teknologi modern dan menghasilkan beras berkualitas unggul.</p>
                             </div>
                             <a data-modal-target="#modal4" class="open-modal btn-border btn-arrow block capitalize text-primary border py-[7px] px-[6px] rounded-[5px] border-primary bg-transparent hover:bg-primary hover:text-white text-sm font-medium rounded-4 transition duration-300 ease-in-out relative hover:cursor-pointer">Selengkapnya
-                                <img src="src/images/ic-arrow-right.svg" alt="icon" class="svg absolute">
+                                <img src="images/ic-arrow-right.svg" alt="icon" class="svg absolute">
                             </a>
                         </div>
                    </div>
                    <div class="box-white dark:bg-hdark flex gap-3">
                         <div class="w-4/12">
-                            <img class="w-full object-cover rounded-[7px]" src="src/images/product-img-5.jpg" alt="product-img">
+                            <img class="w-full object-cover rounded-[7px]" src="images/product-img-5.png" alt="product-img">
                         </div>
                         <div class="w-8/12 flex flex-col gap-3 justify-between">
                             <div class="text">
@@ -177,13 +190,13 @@
                                 <p class="text-slate">Diproses dengan teknik modern untuk memastikan kemurnian dan konsistensi yang optimal.</p>
                             </div>
                             <a data-modal-target="#modal5" class="open-modal btn-border btn-arrow block capitalize text-primary border py-[7px] px-[6px] rounded-[5px] border-primary bg-transparent hover:bg-primary hover:text-white text-sm font-medium rounded-4 transition duration-300 ease-in-out relative hover:cursor-pointer">Selengkapnya
-                                <img src="src/images/ic-arrow-right.svg" alt="icon" class="svg absolute">
+                                <img src="images/ic-arrow-right.svg" alt="icon" class="svg absolute">
                             </a>
                         </div>
                    </div>
                    <div class="box-white dark:bg-hdark flex gap-3">
                         <div class="w-4/12">
-                            <img class="w-full object-cover rounded-[7px]" src="src/images/product-img-6.jpg" alt="product-img">
+                            <img class="w-full object-cover rounded-[7px]" src="images/product-img-6.png" alt="product-img">
                         </div>
                         <div class="w-8/12 flex flex-col gap-3 justify-between">
                             <div class="text">
@@ -191,13 +204,13 @@
                                 <p class="text-slate">Diproduksi dengan standar keamanan pangan yang ketat dan memiliki cita rasa khas Nusantara.</p>
                             </div>
                             <a data-modal-target="#modal6" class="open-modal btn-border btn-arrow block capitalize text-primary border py-[7px] px-[6px] rounded-[5px] border-primary bg-transparent hover:bg-primary hover:text-white text-sm font-medium rounded-4 transition duration-300 ease-in-out relative hover:cursor-pointer ">Selengkapnya
-                                <img src="src/images/ic-arrow-right.svg" alt="icon" class="svg absolute">
+                                <img src="images/ic-arrow-right.svg" alt="icon" class="svg absolute">
                             </a>
                         </div>
                    </div>
                    <div class="box-white dark:bg-hdark flex gap-3">
                         <div class="w-4/12">
-                            <img class="w-full object-cover rounded-[7px]" src="src/images/product-img-7.jpg" alt="product-img">
+                            <img class="w-full object-cover rounded-[7px]" src="images/product-img-7.png" alt="product-img">
                         </div>
                         <div class="w-8/12 flex flex-col gap-3 justify-between">
                             <div class="text">
@@ -205,7 +218,7 @@
                                 <p class="text-slate">Minuman berperisa soda Cola dan Lemon, aman dan mendukung aktivitas sehari-hari.</p>
                             </div>
                             <a data-modal-target="#modal7" class="open-modal btn-border btn-arrow block capitalize text-primary border py-[7px] px-[6px] rounded-[5px] border-primary bg-transparent hover:bg-primary hover:text-white text-sm font-medium rounded-4 transition duration-300 ease-in-out relative hover:cursor-pointer ">Selengkapnya
-                                <img src="src/images/ic-arrow-right.svg" alt="icon" class="svg absolute">
+                                <img src="images/ic-arrow-right.svg" alt="icon" class="svg absolute">
                             </a>
                         </div>
                    </div>
@@ -220,21 +233,21 @@
                     <div class="xl:col-span-6 xl:col-start-7 md:col-span-8 md:col-start-5 w-full relative z-10">
                         <div class="agroosfood-item mb-8">
                             <h4 class="flex gap-2 items-center mb-2">
-                                <img src="src/images/ic-excellence-3.svg" alt="icon" class="icon">
+                                <img src="images/ic-excellence-3.svg" alt="icon" class="icon">
                                 <span class="font-bold">Harga Kompetitif</span>
                             </h4>
                             <p class="text-[#B3B3B3]">Harga terjangkau dan kualitas produk kompetitif melalui budidaya organik dan pengolahan modern.</p>
                         </div>
                         <div class="agroosfood-item mb-8">
                             <h4 class="flex gap-2 items-center mb-2">
-                                <img src="src/images/ic-excellence-1.svg" alt="icon" class="icon">
+                                <img src="images/ic-excellence-1.svg" alt="icon" class="icon">
                                 <span class="font-bold">Berstandar Unggul</span>
                             </h4>
                             <p class="text-[#B3B3B3]">Kepuasan customer adalah kebanggan kami guna meningkatkan pelayanan dan menjada kualitas produk.</p>
                         </div>
                         <div class="agroosfood-item">
                             <h4 class="flex gap-2 items-center mb-2">
-                                <img src="src/images/ic-excellence-2.svg" alt="icon" class="icon">
+                                <img src="images/ic-excellence-2.svg" alt="icon" class="icon">
                                 <span class="font-bold">Pelayanan Utama</span>
                             </h4>
                             <p class="text-[#B3B3B3]">Terdepan dalam pelayanan agar permintaan segera terpenuhi dan kepuasan customer tercapai.</p>
@@ -250,29 +263,29 @@
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4">
                     <div class="box-white dark:bg-hdark text-center">
-                        <img src="src/images/img-langkah-1.png" alt="img-langkah" class="block dark:hidden mx-auto mb-4 max-h-40">
-                        <img src="src/images/img-langkah-dark-1.png" alt="img-langkah" class="hidden dark:block mx-auto mb-4 max-h-40">
+                        <img src="images/img-langkah-1.png" alt="img-langkah" class="block dark:hidden mx-auto mb-4 max-h-40">
+                        <img src="images/img-langkah-dark-1.png" alt="img-langkah" class="hidden dark:block mx-auto mb-4 max-h-40">
                         <span class="p-[10px] bg-[#E7E7E7] dark:bg-[#1F1F1F] dark:text-white text-center rounded-lg inline-block mx-auto mb-4">Langkah 1</span>
                         <h4 class="font-bold text-lg mb-1 dark:text-white">Klik Beli Sekarang</h4>
                         <!-- <p class="text-slate max-w-[16.5rem] mx-auto">Pilih tombol <span class="text-primary">“Beli Sekarang”</span> yang tampil di layar Kerabat.</p> -->
                     </div>
                     <div class="box-white dark:bg-hdark text-center">
-                        <img src="src/images/img-langkah-2.png" alt="img-langkah" class="block dark:hidden mx-auto mb-4 max-h-40">
-                        <img src="src/images/img-langkah-dark-2.png" alt="img-langkah" class="hidden dark:block mx-auto mb-4 max-h-40">
+                        <img src="images/img-langkah-2.png" alt="img-langkah" class="block dark:hidden mx-auto mb-4 max-h-40">
+                        <img src="images/img-langkah-dark-2.png" alt="img-langkah" class="hidden dark:block mx-auto mb-4 max-h-40">
                         <span class="p-[10px] bg-[#E7E7E7] dark:bg-[#1F1F1F] dark:text-white text-center rounded-lg inline-block mx-auto mb-4">Langkah 2</span>
                         <h4 class="font-bold text-lg mb-1 dark:text-white">Kirim Pesan ke Admin</h4>
                         <!-- <p class="text-slate max-w-[16.5rem] mx-auto">Kerabat dapat <span class="text-primary">Bertanya dan konsultasi</span> terkait produk</p> -->
                     </div>
                     <div class="box-white dark:bg-hdark text-center">
-                        <img src="src/images/img-langkah-4.png" alt="img-langkah" class="block dark:hidden mx-auto mb-4 max-h-40">
-                        <img src="src/images/img-langkah-dark-3.png" alt="img-langkah" class="hidden dark:block mx-auto mb-4 max-h-40">
+                        <img src="images/img-langkah-4.png" alt="img-langkah" class="block dark:hidden mx-auto mb-4 max-h-40">
+                        <img src="images/img-langkah-dark-3.png" alt="img-langkah" class="hidden dark:block mx-auto mb-4 max-h-40">
                         <span class="p-[10px] bg-[#E7E7E7] dark:bg-[#1F1F1F] dark:text-white text-center rounded-lg inline-block mx-auto mb-4">Langkah 3</span>
                         <h4 class="font-bold text-lg mb-1 dark:text-white">Lakukan Pemesanan</h4>
                         <!-- <p class="text-slate max-w-[16.5rem] mx-auto">Lengkapi informasi untuk <span class="text-primary">Pemesanan</span> dengan Admin</p> -->
                     </div>
                     <div class="box-white dark:bg-hdark text-center">
-                        <img src="src/images/img-langkah-3.png" alt="img-langkah" class="block dark:hidden mx-auto mb-4 max-h-40">
-                        <img src="src/images/img-langkah-dark-4.png" alt="img-langkah" class="hidden dark:block mx-auto mb-4 max-h-40">
+                        <img src="images/img-langkah-3.png" alt="img-langkah" class="block dark:hidden mx-auto mb-4 max-h-40">
+                        <img src="images/img-langkah-dark-4.png" alt="img-langkah" class="hidden dark:block mx-auto mb-4 max-h-40">
                         <span class="p-[10px] bg-[#E7E7E7] dark:bg-[#1F1F1F] dark:text-white text-center rounded-lg inline-block mx-auto mb-4">Langkah 4</span>
                         <h4 class="font-bold text-lg mb-1 dark:text-white">Proses Pembayaran</h4>
                         <!-- <p class="text-slate max-w-[16.5rem] mx-auto">Setelah menyetujui pesanan, lakukan <span class="text-primary">Proses Pembayaran</span></p> -->
@@ -282,15 +295,15 @@
             <section class="cta xl:py-[4.688rem] xl:pt-[10.938rem] xl:pb-[9.375rem] pb-16">
                 <div class="bg-primary rounded-[10px] p-6 w-full flex md:flex-row flex-col justify-between">
                     <div class="md:w-7/12 w-full block md:0 mb-10">
-                        <!-- <img src="src/images/logo-agros-white.png" alt="" class="logo-white mb-6"> -->
+                        <!-- <img src="images/logo-agros-white.png" alt="" class="logo-white mb-6"> -->
                         <h2 class="text-white font-bold text-[1.875rem]">Solusi Tepat Penyedia Bahan Makanan dengan Kualitas Terbaik</h2>
                         <p class="text-lg text-white mb-6">Jaminan Ketersediaan Bahan Kualitas Terbaik dengan <br>Harga Kompetitif</p>
-                        <a href="https://api.whatsapp.com/send?phone=6285366558842&amp;text=Halo%20Kerabat%20AGROS" class="btn-border capitalize relative text-primary border-2 p-[6px] pr-5 rounded-[7px] border-white bg-white hover:scale-[1.03] rounded-4 transition duration-300 ease-in-out md:inline-flex flex items-center gap-2 group md:mr-2 md:mb-0 mb-3" target="_blank"><img src="src/images/ic-btn-wa.png" alt="icon" class="svg object-contain"><span><small class="text-[11px] text-[#A1A1A1]">Customer Service</small> <span class="block font-medium md:text-base text-sm">+62 853 6655 8842</span></span></a>
-                        <a href="https://api.whatsapp.com/send?phone=6285366558831&amp;text=Halo%20Kerabat%20AGROS" class="btn-border capitalize relative text-primary border-2 p-[6px] pr-5 rounded-[7px] border-white bg-white hover:scale-[1.03] rounded-4 transition duration-300 ease-in-out md:inline-flex flex items-center  gap-2 group" target="_blank"><img src="src/images/ic-btn-wa.png" alt="icon" class="svg object-contain"><span><small class="text-[11px] text-[#A1A1A1]">Informasi Kemitraan</small> <span class="block font-medium md:text-base text-sm">+62 853 6655 8831</span></span></a>
+                        <a href="https://api.whatsapp.com/send?phone=6285366558842&amp;text=Halo%20Kerabat%20AGROS" class="btn-border capitalize relative text-primary border-2 p-[6px] pr-5 rounded-[7px] border-white bg-white hover:scale-[1.03] rounded-4 transition duration-300 ease-in-out md:inline-flex flex items-center gap-2 group md:mr-2 md:mb-0 mb-3" target="_blank"><img src="images/ic-btn-wa.png" alt="icon" class="svg object-contain"><span><small class="text-[11px] text-[#A1A1A1]">Customer Service</small> <span class="block font-medium md:text-base text-sm">+62 853 6655 8842</span></span></a>
+                        <a href="https://api.whatsapp.com/send?phone=6285366558831&amp;text=Halo%20Kerabat%20AGROS" class="btn-border capitalize relative text-primary border-2 p-[6px] pr-5 rounded-[7px] border-white bg-white hover:scale-[1.03] rounded-4 transition duration-300 ease-in-out md:inline-flex flex items-center  gap-2 group" target="_blank"><img src="images/ic-btn-wa.png" alt="icon" class="svg object-contain"><span><small class="text-[11px] text-[#A1A1A1]">Informasi Kemitraan</small> <span class="block font-medium md:text-base text-sm">+62 853 6655 8831</span></span></a>
                         
                     </div>
                     <div class="md:w-5/12 w-full relative">
-                        <img src="src/images/img-beras.png" alt="img" class="w-auto md:h-[27.25rem] md:absolute md:right-[-3.125rem] md:bottom-[-2.188rem] object-contain md:ml-0 ml-[-8%]">
+                        <img src="images/img-beras.png" alt="img" class="w-auto md:h-[27.25rem] md:absolute md:right-[-3.125rem] md:bottom-[-2.188rem] object-contain md:ml-0 ml-[-8%]">
                     </div>
                 </div>
             </section>
@@ -299,10 +312,10 @@
     </div>
     <footer class="footer py-16 px-4 bg-white dark:bg-hdark dark:text-white">
         <div class="container mx-auto relative">
-            <a href="#" id="btt" class="btt absolute right-0 top-0 hover:cursor-pointer"><img src="src/images/ic-btt.svg" alt="ic"></a>
+            <a href="#" id="btt" class="btt absolute right-0 top-0 hover:cursor-pointer"><img src="images/ic-btt.svg" alt="ic"></a>
             <div class="footer-logo mb-14">
-                <img class="dark:hidden" src="src/images/logo-agros-food.svg" alt="logo-agroosfood">
-                <img class="hidden dark:block" src="src/images/logo-dark.svg" alt="logo-agroosfood">
+                <img class="dark:hidden" src="images/logo-agros-food.svg" alt="logo-agroosfood">
+                <img class="hidden dark:block" src="images/logo-dark.svg" alt="logo-agroosfood">
             </div>
             <div class="footer-content grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 md:mb-[3.75rem] mb-8">
                 <div>
@@ -324,42 +337,42 @@
                     <h4 class="text-primary font-medium  text-21 md:mb-5 mb-[16px]">SOSIAL MEDIA</h4>
                     <div class="socmed flex gap-3 items-center">
                         <a href="#" target="_blank">
-                            <img src="src/images/ic-socmed-1.png" alt="ic-socmed">
+                            <img src="images/ic-socmed-1.png" alt="ic-socmed">
                         </a>
                         <a href="#" target="_blank">
-                            <img src="src/images/ic-socmed-2.png" alt="ic-socmed">
+                            <img src="images/ic-socmed-2.png" alt="ic-socmed">
                         </a>
                         <!-- <a href="#" target="_blank">
-                            <img src="src/images/ic-socmed-3.png" alt="ic-socmed">
+                            <img src="images/ic-socmed-3.png" alt="ic-socmed">
                         </a> -->
                         <a href="#" target="_blank">
-                            <img src="src/images/ic-socmed-4.png" alt="ic-socmed">
+                            <img src="images/ic-socmed-4.png" alt="ic-socmed">
                         </a>
                         <a href="#" target="_blank">
-                            <img src="src/images/ic-socmed-5.png" alt="ic-socmed">
+                            <img src="images/ic-socmed-5.png" alt="ic-socmed">
                         </a>
                     </div>
                 </div>
                 <div>
                     <h5 class="text-xs md:mb-6 mb-[18px] font-bold text-21 ">SERTIFIKASI</h5>
                     <div class="certif-logo flex gap-4 items-center">
-                        <img src="src/images/ic-certif-1.png" alt="ic-certif">
-                        <img src="src/images/ic-certif-2.png" alt="ic-certif">
-                        <img src="src/images/ic-certif-3.png" alt="ic-certif">
+                        <img src="images/ic-certif-1.png" alt="ic-certif">
+                        <img src="images/ic-certif-2.png" alt="ic-certif">
+                        <img src="images/ic-certif-3.png" alt="ic-certif">
                     </div>
                 </div>
             </div>
             
             <div class="flex gap-12 mb-16 md:justify-normal justify-between">
                 <div class="mode">
-                    <img class="ic inline-block dark:hidden" src="src/images/toggle-dark-theme.svg" alt="icon">
+                    <img class="ic inline-block dark:hidden" src="images/toggle-dark-theme.svg" alt="icon">
                     <span class="dark:hidden cursor-pointer">DARK</span>
-                    <img class="ic hidden dark:inline-block" src="src/images/toggle-light-theme.svg" alt="icon">
+                    <img class="ic hidden dark:inline-block" src="images/toggle-light-theme.svg" alt="icon">
                     <span class="hidden dark:inline-block cursor-pointer">LIGHT</span>
                 </div>
                 <div class="lang">
-                    <img class="ic inline-block dark:hidden" src="src/images/globe-light.svg" alt="icon">
-                    <img class="ic hidden dark:inline-block" src="src/images/globe-dark.svg" alt="icon">
+                    <img class="ic inline-block dark:hidden" src="images/globe-light.svg" alt="icon">
+                    <img class="ic hidden dark:inline-block" src="images/globe-dark.svg" alt="icon">
                     <a href="javascript:void(0)" class="font-bold active cursor-pointer">INA</a>
                     <span class="w-[1px] h-[30px] bg-[#E5E5E5] inline-block align-middle mx-2"></span>
                     <a href="javascript:void(0)" class="cursor-pointer">ENG</a>
@@ -382,13 +395,13 @@
     <!-- Modal 1 -->
     <div id="modal1" class="modal fixed inset-0 z-[9999] flex items-center justify-center hidden">
         <div class="bg-white rounded shadow-lg lg:max-w-[65.8%] xxl:max-w-[934px] max-w-[90%] max-h-[90%] lg:min-h-[26.25rem] overflow-auto w-full p-5 pt-14 relative">
-            <img class="close-modal absolute top-5 right-5 hover:cursor-pointer" src="src/images/ic-close.svg" alt="ic-close">
+            <span class="close-modal absolute top-5 right-5 hover:cursor-pointer"><img class="svg" src="images/ic-close.svg" alt="ic-close"></span>
             <div class="modal-content lg:flex lg:gap-[1.875rem] items-center h-full ">
                 <div class="thumbnail lg:flex-initial lg:w-[30%] lg:max-w-64">
-                    <img class="lg:max-h-80 max-h-40 mx-auto mb-5 lg:mb-0" src="src/images/product-img-1.jpg" alt="product-img">
+                    <img class="lg:max-h-80 max-h-40 mx-auto mb-5 lg:mb-0" src="images/product-img-1.png" alt="product-img">
                 </div>
                 <div class="text lg:flex-initial lg:w-[69%]">
-                    <h4 class="lg:text-xl text-lg font-bold mb-3">Daging</h4>
+                    <h4 class="lg:text-xl text-lg font-bold mb-3">Daging Mentah</h4>
                     <div class="desc text-slate mb-5">
                         <p>Daging sapi yang di produksi dengan teknologi modern, melalui pengujian kualitas yang ketat, menggunakan daging sapi pilihan, vacum sealed dan food grade packaging yang memperpanjang umur simpan agar tetap higenis.</p>
                         <p>Terjaminnya mutu produk dengan sertifikasi Halal dan NKV yang telah kami dapatkan, sehingga dapat memberikan rasa nyaman dan aman untuk seluruh konsumen Indonesia.</p>
@@ -419,10 +432,10 @@
     <!-- Modal 2 -->
     <div id="modal2" class="modal fixed inset-0 z-[9999] flex items-center justify-center hidden">
         <div class="bg-white rounded shadow-lg lg:max-w-[65.8%] xxl:max-w-[934px] max-w-[90%] max-h-[90%] lg:min-h-[26.25rem] overflow-auto w-full p-5 pt-14 relative">
-            <img class="close-modal absolute top-5 right-5 hover:cursor-pointer" src="src/images/ic-close.svg" alt="ic-close">
+            <span class="close-modal absolute top-5 right-5 hover:cursor-pointer"><img class="svg" src="images/ic-close.svg" alt="ic-close"></span>
             <div class="modal-content lg:flex lg:gap-[1.875rem] items-center h-full ">
                 <div class="thumbnail lg:flex-initial lg:w-[30%] lg:max-w-64">
-                    <img class="lg:max-h-80 max-h-40 mx-auto mb-5 lg:mb-0" src="src/images/product-img-2.jpg" alt="product-img">
+                    <img class="lg:max-h-80 max-h-40 mx-auto mb-5 lg:mb-0" src="images/product-img-2.png" alt="product-img">
                 </div>
                 <div class="text lg:flex-initial lg:w-[69%]">
                     <h4 class="lg:text-xl text-lg font-bold mb-3">Daging Olahan</h4>
@@ -444,10 +457,10 @@
     <!-- Modal 3 -->
     <div id="modal3" class="modal fixed inset-0 z-[9999] flex items-center justify-center hidden">
         <div class="bg-white rounded shadow-lg lg:max-w-[65.8%] xxl:max-w-[934px] max-w-[90%] max-h-[90%] lg:min-h-[26.25rem] overflow-auto w-full p-5 pt-14 relative">
-            <img class="close-modal absolute top-5 right-5 hover:cursor-pointer" src="src/images/ic-close.svg" alt="ic-close">
+            <span class="close-modal absolute top-5 right-5 hover:cursor-pointer"><img class="svg" src="images/ic-close.svg" alt="ic-close"></span>
             <div class="modal-content lg:flex lg:gap-[1.875rem] items-center h-full ">
                 <div class="thumbnail lg:flex-initial lg:w-[30%] lg:max-w-64">
-                    <img class="lg:max-h-80 max-h-40 mx-auto mb-5 lg:mb-0" src="src/images/product-img-3.jpg" alt="product-img">
+                    <img class="lg:max-h-80 max-h-40 mx-auto mb-5 lg:mb-0" src="images/product-img-3.png" alt="product-img">
                 </div>
                 <div class="text lg:flex-initial lg:w-[69%]">
                     <h4 class="lg:text-xl text-lg font-bold mb-3">Ayam Ungkep</h4>
@@ -467,10 +480,10 @@
     <!-- Modal 4 -->
     <div id="modal4" class="modal fixed inset-0 z-[9999] flex items-center justify-center hidden">
         <div class="bg-white rounded shadow-lg lg:max-w-[65.8%] xxl:max-w-[934px] max-w-[90%] max-h-[90%] lg:min-h-[26.25rem] overflow-auto w-full p-5 pt-14 relative">
-            <img class="close-modal absolute top-5 right-5 hover:cursor-pointer" src="src/images/ic-close.svg" alt="ic-close">
+            <span class="close-modal absolute top-5 right-5 hover:cursor-pointer"><img class="svg" src="images/ic-close.svg" alt="ic-close"></span>
             <div class="modal-content lg:flex lg:gap-[1.875rem] items-center h-full ">
                 <div class="thumbnail lg:flex-initial lg:w-[30%] lg:max-w-64">
-                    <img class="lg:max-h-80 max-h-40 mx-auto mb-5 lg:mb-0" src="src/images/product-img-4.jpg" alt="product-img">
+                    <img class="lg:max-h-80 max-h-40 mx-auto mb-5 lg:mb-0" src="images/product-img-4.png" alt="product-img">
                 </div>
                 <div class="text lg:flex-initial lg:w-[69%]">
                     <h4 class="lg:text-xl text-lg font-bold mb-3">Beras</h4>
@@ -494,10 +507,10 @@
     <!-- Modal 5 -->
     <div id="modal5" class="modal fixed inset-0 z-[9999] flex items-center justify-center hidden">
         <div class="bg-white rounded shadow-lg lg:max-w-[65.8%] xxl:max-w-[934px] max-w-[90%] max-h-[90%] lg:min-h-[26.25rem] overflow-auto w-full p-5 pt-14 relative">
-            <img class="close-modal absolute top-5 right-5 hover:cursor-pointer" src="src/images/ic-close.svg" alt="ic-close">
+            <span class="close-modal absolute top-5 right-5 hover:cursor-pointer"><img class="svg" src="images/ic-close.svg" alt="ic-close"></span>
             <div class="modal-content lg:flex lg:gap-[1.875rem] items-center h-full ">
                 <div class="thumbnail lg:flex-initial lg:w-[30%] lg:max-w-64">
-                    <img class="lg:max-h-80 max-h-40 mx-auto mb-5 lg:mb-0" src="src/images/product-img-5.jpg" alt="product-img">
+                    <img class="lg:max-h-80 max-h-40 mx-auto mb-5 lg:mb-0" src="images/product-img-5.png" alt="product-img">
                 </div>
                 <div class="text lg:flex-initial lg:w-[69%]">
                     <h4 class="lg:text-xl text-lg font-bold mb-3">Tepung</h4>
@@ -518,10 +531,10 @@
     <!-- Modal 6 -->
     <div id="modal6" class="modal fixed inset-0 z-[9999] flex items-center justify-center hidden">
         <div class="bg-white rounded shadow-lg lg:max-w-[65.8%] xxl:max-w-[934px] max-w-[90%] max-h-[90%] lg:min-h-[26.25rem] overflow-auto w-full p-5 pt-14 relative">
-            <img class="close-modal absolute top-5 right-5 hover:cursor-pointer" src="src/images/ic-close.svg" alt="ic-close">
+            <span class="close-modal absolute top-5 right-5 hover:cursor-pointer"><img class="svg" src="images/ic-close.svg" alt="ic-close"></span>
             <div class="modal-content lg:flex lg:gap-[1.875rem] items-center h-full ">
                 <div class="thumbnail lg:flex-initial lg:w-[30%] lg:max-w-64">
-                    <img class="lg:max-h-80 max-h-40 mx-auto mb-5 lg:mb-0" src="src/images/product-img-6.jpg" alt="product-img">
+                    <img class="lg:max-h-80 max-h-40 mx-auto mb-5 lg:mb-0" src="images/product-img-6.png" alt="product-img">
                 </div>
                 <div class="text lg:flex-initial lg:w-[69%]">
                     <h4 class="lg:text-xl text-lg font-bold mb-3">Snack</h4>
@@ -545,10 +558,10 @@
     <!-- Modal 7 -->
     <div id="modal7" class="modal fixed inset-0 z-[9999] flex items-center justify-center hidden">
         <div class="bg-white rounded shadow-lg lg:max-w-[65.8%] xxl:max-w-[934px] max-w-[90%] max-h-[90%] lg:min-h-[26.25rem] overflow-auto w-full p-5 pt-14 relative">
-            <img class="close-modal absolute top-5 right-5 hover:cursor-pointer" src="src/images/ic-close.svg" alt="ic-close">
+            <span class="close-modal absolute top-5 right-5 hover:cursor-pointer"><img class="svg" src="images/ic-close.svg" alt="ic-close"></span>
             <div class="modal-content lg:flex lg:gap-[1.875rem] items-center h-full ">
                 <div class="thumbnail lg:flex-initial lg:w-[30%] lg:max-w-64">
-                    <img class="lg:max-h-80 max-h-40 mx-auto mb-5 lg:mb-0" src="src/images/product-img-7.jpg" alt="product-img">
+                    <img class="lg:max-h-80 max-h-40 mx-auto mb-5 lg:mb-0" src="images/product-img-7.png" alt="product-img">
                 </div>
                 <div class="text lg:flex-initial lg:w-[69%]">
                     <h4 class="lg:text-xl text-lg font-bold mb-3">Minuman</h4>
@@ -569,7 +582,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="src/main.js"></script>
+    <script src="main.js"></script>
     <script>
         $(document).ready(function() {
             function initializeSwiper() {
