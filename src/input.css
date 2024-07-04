@@ -1,0 +1,207 @@
+@import "@fontsource/inter"; /* Import font Inter dari @fontsource */
+@font-face {
+    font-family: 'Durk Text Wide';
+    src: url('fonts/druktextwide-bold.woff2') format('woff2'),
+         url('fonts/druktextwide-bold.ttf') format('ttf'),
+         url('fonts/druktextwide-bold.eot') format('eot'),
+         url('fonts/druktextwide-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1366px;
+    }
+}
+
+@media (max-width: 1500px) and (min-width: 1280px) {
+    .container {
+        width: 85%;
+    }
+}
+
+body{
+    font-family: Inter, sans-serif;
+}
+
+.header{
+    transition: all 0.5s ease 0s;
+}
+.header.hsticky{
+    height: 80px;
+}
+
+.dark .header.hsticky{
+    background: #171717;
+}
+
+.box-white{
+    padding: 12px;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+.agroosfood{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.agroosfood .agroosfood-item h4{
+    font-size: 1.5rem;
+    line-height: 1.3em;
+}
+.btn-arrow .svg{
+    position: absolute;
+    /* top: 15px; */
+    /* right: 12px; */
+    top: 8px;
+    right: 6px;
+    transition: all .3s ease-in-out;
+}
+.btn-arrow:hover .svg{
+    transform: translateX(4px);
+}
+.btn-arrow:hover .svg path{
+    stroke: #FFFFFF;
+
+}
+.partner-group{
+    background: linear-gradient(47.02deg, #FF6B3F 11.89%, #FE9272 81.94%);
+
+}
+
+.ourproduct .box-white img.w-full{
+    height: 100%;
+}
+.ourproduct .box-white .text .text-slate{
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.0001em;
+    margin-bottom: 2rem;
+}
+
+.modal-content .desc p:not(:last-child){
+    margin-bottom: 1.5rem;
+}
+
+.tags{
+}
+
+
+.tags .tag{
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-align: center;
+    background: #F2F2F2;
+    color: #777777;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+.tags .tag:not(:last-child){
+    margin-right: 4px;
+}
+
+.agroosfood::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(images/bg-section-food.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .excellence{
+        max-width: calc(100% - 32px);
+    }
+    .tags .tag{
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+}
+
+@media (max-width: 500px) {
+    .agroosfood::before{
+        width: 300%;
+        height: 145%;
+        background-image: url(images/bg-section-food.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        transform: translate(-33%, -9%) rotate(90deg);
+    }
+    .agroosfood .agroosfood-item h4{
+        font-size: 18px;
+        line-height: 1.3em;
+    }
+    .agroosfood .agroosfood-item p{
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+    
+}
+
+.lang .active{
+    color: #ff6b3f;
+}
+address{
+    font-style: normal;
+}
+.cta .bg-primary{
+    background: url(images/bg-cta.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cta .btn-arrow .svg{
+    top: 15px;
+    right: 15px;
+}
+
+.text-21{
+    font-size: 1.313rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    letter-spacing: 0.005em;
+}
+
+.socmed a{
+    transition: all .3s ease-in-out;
+}
+.socmed a:hover{
+    transform: translateY(-4px);
+}
+.footer-copyright{
+    background: linear-gradient(47.02deg, #FF6B3F 11.89%, #FE9272 81.94%);
+}
+
+.swiper .swiper-wrapper{
+    /* overflow: hidden; */
+}
+
+.swiper-pagination .swiper-pagination-bullet{
+    background: #FFFFFF;
+    opacity: .5;
+    width: 10px;
+    height: 10px;
+    transition: all .3s ease-in-out;
+}
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    width: 24px;
+    border-radius: 10px;
+    opacity: 1;
+}
+.swiper-ex{
+    overflow: visible;
+}
+.swiper-ex + .swiper-pagination{
+    margin-bottom: -38px;
+}
